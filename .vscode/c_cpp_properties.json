@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\cheny\\cpp\\iup-learning\\iup-3.30_lib\\include",
+                "C:\\Users\\cheny\\cpp\\iup-learning\\cd-5.14_lib\\include",
+                "C:\\Users\\cheny\\cpp\\iup-learning\\im-3.15_lib\\include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\msys2\\mingw64\\bin\\gcc.exe",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": [
+                "-I./iup-3.30_lib/include",
+                "-I./cd-5.14_lib/include",
+                "-I./im-3.15_lib/include",
+                "-L./iup-3.30_lib",
+                "-L./cd-5.14_lib",
+                "-L./im-3.15_lib",
+                "-mwindows",
+                "-liup",
+                "-liupcontrols",
+                "-lcd",
+                "-liupcd",
+                "-lcomctl32",
+                "-lole32"
+            ]
+        }
+    ],
+    "version": 4
+}

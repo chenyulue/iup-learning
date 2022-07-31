@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe 生成活动文件",
+			"command": "C:\\msys2\\mingw64\\bin\\gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
+				"-I./iup-3.30_lib/include",
+				"-I./cd-5.14_lib/include",
+				"-I./im-3.15_lib/include",
+				"-L./iup-3.30_lib",
+				"-L./cd-5.14_lib",
+				"-L./im-3.15_lib",
+				"-mwindows",
+				"-liup",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "编译器: C:\\msys2\\mingw64\\bin\\gcc.exe"
+		}
+	]
+}
